@@ -1,0 +1,33 @@
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+    padding: 9px 10px 9px 10px;
+}
+
+input::placeholder {
+    color: gray;
+}
+
+input:focus {
+    border-bottom: 1px solid orange;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+

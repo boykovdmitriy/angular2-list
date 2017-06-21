@@ -1,0 +1,69 @@
+import {Component} from "@angular/core";
+
+@Component({
+    selector: 'client-list',
+    template: `
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>
+        <div>content</div>`
+})
+export class ClientListComponent {
+}
