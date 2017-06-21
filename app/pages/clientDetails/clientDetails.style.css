@@ -1,0 +1,39 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.avatar, img {
+    width: 128px;
+    height: 128px;
+    background-color: gray;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.user-job {
+    font-size: 0.8em;
+    color: gray;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.user-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

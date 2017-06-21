@@ -4,6 +4,9 @@ import "rxjs/add/operator/map";
 import {ClientModel, IClientModel} from "../models/client.model";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
 import "rxjs/add/operator/filter";
+import "rxjs/add/operator/mergeMap";
+import "rxjs/add/operator/first";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class ClientsService {
@@ -18,5 +21,9 @@ export class ClientsService {
             this.clients.next(data);
             return data;
         });
+    }
+
+    getClientById(id: number): Observable<ClientModel> {
+        return this.clients.flatMap(x => x).first(x => x.id == id);
     }
 }

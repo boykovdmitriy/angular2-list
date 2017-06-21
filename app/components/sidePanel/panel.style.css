@@ -9,20 +9,16 @@
 }
 
 header {
-    height: 60px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*set color for child elements*/
-::content /deep/ * {
-    color: white;
-}
-
 .content {
     margin-top: 3px;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /*styling scroll bar for webkit*/

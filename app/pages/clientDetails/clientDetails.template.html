@@ -1,0 +1,29 @@
+<div class="avatar">
+    <img src="{{client?.general.avatar}}">
+</div>
+
+<div class="user-details">
+    <span class="user-name">{{client?.general.firstName + ' ' + client?.general.lastName}}</span>
+
+    <div class="user-job">
+        <span>{{client?.job.title}}</span> - <span>{{client?.job.company}}</span>
+    </div>
+
+    <address>
+        <span>{{client?.address.country}}</span>
+        <span>{{client?.address.city}}</span>
+        <span>{{client?.address.street}}</span>
+        <span>{{client?.address.zipCode}}</span>
+    </address>
+
+    <div class="user-contacts">
+       <div>
+           <i class="fa fa-envelope-o" aria-hidden="true"></i>
+           <a href="mailto:{{client?.contact.email}}" target="_top">{{client?.contact.email}}</a>
+       </div>
+       <div>
+           <i class="fa fa-phone" aria-hidden="true"></i>
+           <a href="tel:{{client?.contact.phone}}">{{client?.contact.phone}}</a>
+       </div>
+    </div>
+</div>

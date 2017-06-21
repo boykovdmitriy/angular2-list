@@ -1,2 +1,12 @@
 @import "~normalize.css";
 @import "~font-awesome/css/font-awesome.css";
+
+body {
+    overflow: hidden;
+}
+
+.information-text {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: gray;
+}

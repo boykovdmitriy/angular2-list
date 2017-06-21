@@ -1,0 +1,42 @@
+:host {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    height: 70px;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 250px;
+}
+
+.avatar img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: gray;
+    border: 2px solid coral;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title {
+    font-size: 1.2em;
+    font-weight: 800;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.job-title {
+    font-size: 0.8em;
+    color: gray;
+    overflow: hidden;
+}

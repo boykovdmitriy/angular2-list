@@ -8,6 +8,7 @@ input {
     font-family: inherit;
     font-size: 100%;
     padding: 9px 10px 9px 10px;
+    color: white;
 }
 
 input::placeholder {
@@ -28,6 +29,7 @@ button {
     background: transparent;
     margin-left: -25px;
     cursor: pointer;
+    color: white;
 }
 
 
