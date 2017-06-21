@@ -9,17 +9,19 @@ import {SearchModule} from "./components/search/search.module";
 import {PagesModule} from "./pages/pages.module";
 import {ROUTES} from "./app.routes";
 import {RouterModule} from "@angular/router";
+import {PipesModule} from "./pipes/pipes.module";
 
 @NgModule
 ({
     imports     : [
         BrowserModule,
-        RouterModule.forRoot(ROUTES, { useHash: false }),
+        RouterModule.forRoot(ROUTES, {useHash: false}),
         HttpModule,
         PanelModule,
         ClientListModule,
         SearchModule,
-        PagesModule],
+        PagesModule,
+        PipesModule],
     declarations: [AppComponent],
     bootstrap   : [AppComponent],
     providers   : [ClientsService]

@@ -10,12 +10,16 @@ import {ClientModel} from "../../models/client.model";
                      (click)="selectItem(client.id)"
                      [ngClass]="{'selected-item':client.id==selectedId}">
         </client-item>
+        <div *ngIf="!clients || clients.length==0">
+            user not found
+        </div>
     `,
     styles  : [`
         .selected-item {
             border-bottom: 2px solid coral;
             padding-left: 15px;
-        }`]
+        }
+    `]
 })
 export class ClientListComponent {
     @Input() clients: Array<ClientModel>;

@@ -11,7 +11,7 @@ import {ClientModel} from "./models/client.model";
                 <search-input (queryChanged)="search($event)"></search-input>
             </ng-container>
             <ng-container content>
-                <client-list [clients]="clients|async"></client-list>
+                <client-list [clients]="clients|async |clientSearch: searchQuery"></client-list>
             </ng-container>
         </panel>
         <section class="content">
@@ -32,11 +32,13 @@ import {ClientModel} from "./models/client.model";
 
 export class AppComponent {
     public clients: Observable<Array<ClientModel>>;
+    public searchQuery: string = '';
 
     constructor(private clientsService: ClientsService) {
         this.clients = clientsService.getClients();
     }
 
     search(value: string) {
+        this.searchQuery = value;
     }
 }
