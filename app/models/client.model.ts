@@ -6,6 +6,7 @@ export interface IClientModel {
 }
 
 export class ClientModel implements IClientModel {
+    /*I added id for model because i need to distinguish elements*/
     public id: number;
     public general: IUserModel;
     public job: IJobModel;

@@ -1,9 +1,11 @@
 import {Component, OnDestroy} from "@angular/core";
-import {ClientsService} from "../../services/clients.service";
 import {ActivatedRoute, Params} from "@angular/router";
 import {Subscription} from "rxjs/Subscription";
-import {ClientModel} from "../../models/client.model";
+
 import "rxjs/add/operator/toPromise";
+
+import {ClientModel} from "../../models/client.model";
+import {ClientsService} from "../../services/clients.service";
 
 @Component({
     selector   : 'client-details',

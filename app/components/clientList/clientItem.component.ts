@@ -1,5 +1,7 @@
 import {Component, Input} from "@angular/core";
+
 import {ClientModel} from "../../models/client.model";
+
 @Component({
     selector : 'client-item',
     template : `

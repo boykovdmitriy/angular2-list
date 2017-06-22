@@ -7,8 +7,7 @@ import {ClientModel} from "../../models/client.model";
         <client-item *ngFor="let client of clients"
                      [client]="client"
                      routerLink="/client/{{client.id}}"
-                     (click)="selectItem(client.id)"
-                     [ngClass]="{'selected-item':client.id==selectedId}">
+                     [ngClass]="{'selected-item':client.id==selectedItem}">
         </client-item>
         <div *ngIf="!clients || clients.length==0">
             user not found
@@ -23,9 +22,5 @@ import {ClientModel} from "../../models/client.model";
 })
 export class ClientListComponent {
     @Input() clients: Array<ClientModel>;
-    private selectedId: number;
-
-    selectItem(id: number) {
-        this.selectedId = id;
-    }
+    @Input() selectedItem:number;
 }

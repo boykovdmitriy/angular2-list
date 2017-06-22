@@ -1,8 +1,9 @@
 import {NgModule} from "@angular/core";
-import {ClientListComponent} from "./clientList.component";
 import {CommonModule} from "@angular/common";
-import {ClientItemComponent} from "./clientItem.component";
 import {RouterModule} from "@angular/router";
+
+import {ClientItemComponent} from "./clientItem.component";
+import {ClientListComponent} from "./clientList.component";
 
 @NgModule({
     imports     : [CommonModule, RouterModule],

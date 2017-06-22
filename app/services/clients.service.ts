@@ -1,12 +1,13 @@
 import {Injectable} from "@angular/core";
 import {Http, Response} from "@angular/http";
-import "rxjs/add/operator/map";
-import {ClientModel, IClientModel} from "../models/client.model";
 import {BehaviorSubject} from "rxjs/BehaviorSubject";
-import "rxjs/add/operator/filter";
+import {Observable} from "rxjs/Observable";
+
 import "rxjs/add/operator/mergeMap";
 import "rxjs/add/operator/first";
-import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/map";
+
+import {ClientModel, IClientModel} from "../models/client.model";
 
 @Injectable()
 export class ClientsService {
