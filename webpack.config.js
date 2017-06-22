@@ -20,14 +20,7 @@ module.exports = {
             "@angular/router",
             '@angular/platform-browser-dynamic',
             '@angular/platform-browser',
-            "rxjs",
-            "@ngrx/core",
-            "@ngrx/effects",
-            "@ngrx/router-store",
-            "@ngrx/store",
-            "@ngrx/store-devtools",
-            "ngrx-store-freeze",
-            "reselect"
+            "rxjs"
         ],
         "styles": [
             "./app/sharedStyles/index.css"
